@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.dropdown {
+  width: 100px;
+  position: relative;
+  text-align: right;
+  button {
+    color: $primary;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+
+  .options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $gray;
+    border-radius: 5px;
+    padding: 5px;
+    button {
+      padding: 5px;
+      color: $secondary;
+      display: block;
+      &:hover,
+      &.current {
+        color: $primary;
+      }
+    }
+  }
+}

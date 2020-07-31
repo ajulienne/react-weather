@@ -1,0 +1,22 @@
+.current-weather {
+  .temp {
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    strong {
+      font-size: 3em;
+    }
+  }
+  .additionnal-infos {
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    ul {
+      padding: 0 0 0 20px;
+      margin: 0;
+      list-style-type: none;
+      color: #555;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@import "../../variables";
+.tab {
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    background-color: $gray;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: stretch;
+    align-items: flex-start;
+
+    div {
+      height: 40px;
+    }
+
+    .precipitations {
+      color: $blue;
+      margin-right: 10px;
+      line-height: 30px;
+    }
+
+    .min-max {
+      margin-left: 10px;
+      span {
+        height: 20px;
+        box-sizing: border-box;
+        line-height: 20px;
+        display: block;
+
+        &:last-child {
+          color: #999;
+        }
+      }
+    }
+
+    :nth-child(1),
+    :nth-child(2),
+    :nth-child(3),
+    :nth-child(4) {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+    }
+    :nth-child(1) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &.open {
+    background-color: $gray;
+    .body {
+      max-height: 1000px;
+      transition: max-height 300ms ease-in-out;
+    }
+  }
+
+  .body {
+    max-height: 0;
+    overflow: hidden;
+    transition: none;
+
+    table {
+      color: $secondary;
+      th {
+        text-align: left;
+        padding-right: 10px;
+      }
+      margin: 20px 0;
+    }
+
+    .day-temps {
+      display: flex;
+      column-gap: 20px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      .morning,
+      .day,
+      .evening,
+      .night {
+        text-align: center;
+        flex: 1;
+        span {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 0.6em;
+        }
+        strong {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}

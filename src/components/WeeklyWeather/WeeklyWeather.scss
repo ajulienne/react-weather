@@ -1,0 +1,30 @@
+@import "../../variables";
+
+.weekly {
+  .toggle {
+    display: flex;
+
+    div {
+      cursor: pointer;
+      color: $secondary;
+      text-align: center;
+      flex: 1 1 0px;
+      padding: 5px 15px;
+      box-sizing: border-box;
+      border-right: 1px solid $secondary;
+      &:last-child {
+        border-right: none;
+      }
+      strong {
+        display: block;
+      }
+      &:hover {
+        color: $primary;
+      }
+
+      &.current {
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../variables";
+
+.address {
+  margin: 20px;
+  h1,
+  h2 {
+    margin: 0;
+  }
+
+  h1 {
+    color: $gray;
+  }
+}

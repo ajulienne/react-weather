@@ -1,0 +1,26 @@
+@import "./variables";
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $gray;
+  font-size: 16px;
+  width: 1024px;
+  margin: auto;
+  color: $default-font-color;
+  background: $primary;
+  background: linear-gradient(135deg, $primary 0%, $secondary 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 512px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  body {
+    width: 100%;
+  }
+}

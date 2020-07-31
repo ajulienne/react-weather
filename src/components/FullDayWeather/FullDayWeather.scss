@@ -1,0 +1,34 @@
+@import "../../variables";
+
+.full-day-weather {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  .morning,
+  .day,
+  .evening,
+  .night,
+  .min,
+  .max {
+    text-align: center;
+    flex: 1;
+    .title {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.6em;
+    }
+    strong {
+      font-size: 2em;
+    }
+  }
+
+  .min {
+    color: $blue;
+  }
+  .max {
+    color: $red;
+  }
+}

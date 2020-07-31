@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.two-days-weather {
+  .day-separator {
+    padding-left: 15px;
+    color: #92929c;
+  }
+
+  .buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    button {
+      display: inline-block;
+      border: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
+      color: $secondary;
+
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.6em;
+
+      &:hover {
+        color: $primary;
+      }
+
+      &.current {
+        color: $primary;
+      }
+    }
+  }
+}

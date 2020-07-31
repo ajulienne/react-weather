@@ -1,0 +1,25 @@
+.side-by-side {
+  display: flex;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  & > div {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .side-by-side {
+    display: block;
+  }
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    margin: 0;
+  }
+}

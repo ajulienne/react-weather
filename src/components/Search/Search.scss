@@ -1,0 +1,94 @@
+@import "../../variables";
+
+.searchbar {
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+
+  svg {
+    vertical-align: bottom;
+    font-size: 25px;
+    color: $secondary;
+    margin-left: 15px;
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  input,
+  .placeholder {
+    display: inline-block;
+    font-size: 1.4em;
+    height: 25px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    line-height: 25px;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    box-sizing: border-box;
+    color: $primary;
+
+    &::placeholder,
+    &.empty {
+      font-family: "Roboto", sans-serif;
+      color: #7dbda0;
+      opacity: 0.7;
+      line-height: 25px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: #777;
+    }
+  }
+
+  .query-results {
+    padding-top: 10px;
+    button {
+      border: none;
+      background-color: #fff;
+      display: block;
+      text-align: left;
+      padding: 5px 15px;
+      font-size: 1em;
+      width: 100%;
+      cursor: pointer;
+      border-top: 1px solid #eee;
+      min-height: 40px;
+      color: #666;
+
+      &:hover {
+        color: #333;
+        background-color: #eee;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .searchbar {
+    margin-top: 20px;
+    width: 512px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .searchbar {
+    width: 100%;
+    border-radius: 0;
+  }
+}

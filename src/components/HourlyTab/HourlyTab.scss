@@ -1,0 +1,56 @@
+@import "../../variables";
+
+.hourly-tab {
+  padding: 15px;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $gray;
+  }
+
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    & > div {
+      flex: 1 1;
+      text-align: center;
+    }
+
+    :last-child {
+      text-align: right;
+    }
+
+    :first-child {
+      text-align: left;
+    }
+  }
+
+  &.open {
+    background-color: $gray;
+    .body {
+      max-height: 1000px;
+      transition: max-height 300ms ease-in-out;
+    }
+  }
+
+  .body {
+    max-height: 0;
+    overflow: hidden;
+    transition: none;
+
+    table {
+      margin-top: 20px;
+      color: $secondary;
+      th {
+        text-align: left;
+        padding-right: 10px;
+      }
+      td {
+        text-align: left;
+      }
+    }
+  }
+}

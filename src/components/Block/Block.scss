@@ -1,0 +1,21 @@
+.block {
+  background-color: #fefefe;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 500px;
+}
+
+@media screen and (max-width: 1024px) {
+  .block {
+    width: 512px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .block {
+    border-radius: 0;
+    width: 100%;
+  }
+}
