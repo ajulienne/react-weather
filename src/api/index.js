@@ -58,7 +58,7 @@ export const getWeatherForLocation = (lat, lon) => {
   return weather
     .get("onecall", {
       params: {
-        appid: "638e46315b6e9c5583fb6f9e86cea8dd",
+        appid: process.env.REACT_APP_OPENWEATHERMAP_API_KEY,
         lat,
         lon,
         units: "metric",

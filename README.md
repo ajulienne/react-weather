@@ -16,3 +16,4 @@ Weather data collected from [OpenWeatherMap](https://openweathermap.org/).
 - [ ] Light/Dark mode based on device preferences
 - [ ] Manual Light/Dark mode
 - [ ] PWA support
+- [ ] Migrate to Typescript
