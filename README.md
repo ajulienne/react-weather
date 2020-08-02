@@ -12,8 +12,8 @@ Weather data collected from [OpenWeatherMap](https://openweathermap.org/).
 - [x] Weekly weather
 - [x] Device geolocation and reverse search
 - [x] Toast messages
-- [ ] Github pages hosting
+- [x] Github pages hosting
 - [ ] Light/Dark mode based on device preferences
 - [ ] Manual Light/Dark mode
-- [ ] PWA support
+- [x] PWA support
 - [ ] Migrate to Typescript
