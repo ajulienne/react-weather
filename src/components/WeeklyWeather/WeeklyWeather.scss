@@ -6,12 +6,12 @@
 
     div {
       cursor: pointer;
-      color: $secondary;
+      color: var(--secondary);
       text-align: center;
       flex: 1 1 0px;
       padding: 5px 15px;
       box-sizing: border-box;
-      border-right: 1px solid $secondary;
+      border-right: 1px solid var(--secondary);
       &:last-child {
         border-right: none;
       }
@@ -19,11 +19,11 @@
         display: block;
       }
       &:hover {
-        color: $primary;
+        color: var(--primary);
       }
 
       &.current {
-        color: $primary;
+        color: var(--primary);
       }
     }
   }

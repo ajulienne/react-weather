@@ -15,18 +15,18 @@
       outline: none;
       background: none;
       cursor: pointer;
-      color: $secondary;
+      color: var(--secondary);
 
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 0.6em;
 
       &:hover {
-        color: $primary;
+        color: var(--primary);
       }
 
       &.current {
-        color: $primary;
+        color: var(--primary);
       }
     }
   }

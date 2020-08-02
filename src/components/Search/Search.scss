@@ -21,10 +21,10 @@
   svg {
     vertical-align: bottom;
     font-size: 25px;
-    color: $secondary;
+    color: var(--secondary);
     margin-left: 15px;
     &:hover {
-      color: $primary;
+      color: var(--primary);
     }
   }
 
@@ -40,12 +40,12 @@
     border: none;
     padding: 0 15px;
     box-sizing: border-box;
-    color: $primary;
+    color: var(--primary);
 
     &::placeholder,
     &.empty {
       font-family: "Roboto", sans-serif;
-      color: #7dbda0;
+      color: var(---gray);
       opacity: 0.7;
       line-height: 25px;
     }

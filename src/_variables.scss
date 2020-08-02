@@ -1,6 +1,7 @@
-$primary: #4fc08d;
-$secondary: #35495e;
-$gray: #e9f7f1;
-$blue: #25a2d8;
-$red: #ff606f;
-$default-font-color: #16132f;
+@media (prefers-color-scheme: dark) {
+  @import "./styles/dark";
+}
+
+@media (prefers-color-scheme: light) {
+  @import "./styles/light";
+}

@@ -34,7 +34,7 @@
   }
 
   &.error {
-    background-color: $red;
+    background-color: var(--red);
   }
 }
 

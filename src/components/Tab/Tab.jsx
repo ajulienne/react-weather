@@ -28,7 +28,9 @@ export const Tab = ({ dayData, unit, isOpen, onToggle }) => {
         </div>
         <div className="precipitations">
           {dayData.pop > 0.15 ? (
-            <span title="Precipitation chances">{dayData.pop * 100}%</span>
+            <span title="Precipitation chances">
+              {Math.round(dayData.pop * 100)}%
+            </span>
           ) : (
             ""
           )}

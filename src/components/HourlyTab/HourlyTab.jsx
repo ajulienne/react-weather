@@ -21,7 +21,9 @@ export const HourlyTab = ({ hourData, unit, isOpen, onToggle }) => {
         <div>
           <FontAwesomeIcon
             alt="Precipitation icon"
-            title={`${hourData.pop * 100}% chance of precipitations`}
+            title={`${Math.round(
+              hourData.pop * 100
+            )}% chance of precipitations`}
             icon={hourData.pop > 0.15 ? faTint : faTintSlash}
           />
         </div>

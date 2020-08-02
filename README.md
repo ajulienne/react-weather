@@ -13,7 +13,7 @@ Weather data collected from [OpenWeatherMap](https://openweathermap.org/).
 - [x] Device geolocation and reverse search
 - [x] Toast messages
 - [x] Github pages hosting
-- [ ] Light/Dark mode based on device preferences
+- [x] Light/Dark mode based on device preferences
 - [ ] Manual Light/Dark mode
 - [x] PWA support
 - [ ] Migrate to Typescript
